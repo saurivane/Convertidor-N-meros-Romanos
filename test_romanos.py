@@ -70,3 +70,12 @@ def test_romanos_1006():
     
 def test_romanos_1023():
     assert romanos(1023) == 'MXXIII'
+        
+def test_romanos_2000():
+    assert romanos(2000) == "No válido"
+
+def test_romanos_4570():
+    assert romanos(4547) == "No válido"
+    
+def test_romanos_negativo():
+    assert romanos(-10) == "No válido"

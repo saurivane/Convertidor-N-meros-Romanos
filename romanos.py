@@ -2,6 +2,9 @@ romano = {1000:'M', 900:'CM',500:'D', 400:'CD', 100:'C', 90:'XC', 50:'L', 40:'XL
 
 
 def romanos(num):
+    if num < 0 or num >= 2000:
+        return "No válido"
+    
     miles = (num //1000)*1000
     centenares = ((num - miles) // 100)*100
     decenas = ((num - miles - centenares )//10)*10
