@@ -79,3 +79,11 @@ def test_romanos_4570():
     
 def test_romanos_negativo():
     assert romanos(-10) == "No válido"
+    
+def test_romanos_caracter_a():
+    with pytest.raises(Exception):
+        assert romanos('a')
+        
+def test_romanos_caracter_punto():
+    with pytest.raises(Exception):
+        assert romanos('.')
