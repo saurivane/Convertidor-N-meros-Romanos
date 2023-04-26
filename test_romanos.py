@@ -77,7 +77,7 @@ def test_romanos_2000():
 def test_romanos_4570():
     assert romanos(4547) == "No válido"
     
-def test_romanos_negativo():
+def test_romanos_menos_10():
     assert romanos(-10) == "No válido"
     
 def test_romanos_caracter_a():
