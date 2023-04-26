@@ -2,6 +2,7 @@ import pytest
 from romanos import romanos
 
 def test_romanos_2():
+    print("El resultado de convertir 2 es II")
     assert romanos(2) == 'II'
     
 def test_romanos_3():

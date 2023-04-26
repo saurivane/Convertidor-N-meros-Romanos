@@ -7,7 +7,6 @@ def romanos(num):
     decenas = ((num - miles - centenares )//10)*10
     unidades = num - miles - centenares - decenas
     
-    descomposicion = str(miles)+str(centenares)+str(decenas)+str(unidades)
     resultado = ''
     
     if miles in romano:
