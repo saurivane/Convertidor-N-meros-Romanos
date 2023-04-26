@@ -70,7 +70,7 @@ def test_romanos_1006():
 def test_romanos_1023():
     assert convertir_a_romano(1023) == 'MXXIII'
         
-""" def test_romanos_2000():
+def test_romanos_2000():
     assert convertir_a_romano(2000) == "No válido"
 
 def test_romanos_4570():
@@ -86,4 +86,3 @@ def test_romanos_caracter_a():
 def test_romanos_caracter_punto():
     with pytest.raises(Exception):
         assert convertir_a_romano('.')
- """
