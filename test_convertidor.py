@@ -1,5 +1,5 @@
 import pytest
-from chatgpt import convertir_a_romano
+from convertidor import convertir_a_romano
 
 def test_romanos_2():
     assert convertir_a_romano(2) == 'II'
